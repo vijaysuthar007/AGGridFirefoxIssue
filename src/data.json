@@ -1,0 +1,37 @@
+{
+    "Variables": [
+        {
+            "SNo": 1,
+            "VariableId": 31488,
+            "Name": "lklklk",
+            "Formula": "100",
+            "ProjectStadiumId": 505,
+            "ProjectLVId": 13587,
+            "OzNumber": "1.11.11.11.11.111.1",
+            "Value": 100.00000,
+            "Description": ""
+        },
+        {
+            "SNo": 2,
+            "VariableId": 31487,
+            "Name": "klklk",
+            "Formula": "10",
+            "ProjectStadiumId": 505,
+            "ProjectLVId": 13587,
+            "OzNumber": "1.11.11.11.11.111.1",
+            "Value": 10.00000,
+            "Description": ""
+        },
+        {
+            "SNo": 3,
+            "VariableId": 95,
+            "Name": "#test1",
+            "Formula": "2+2",
+            "ProjectStadiumId": 505,
+            "ProjectLVId": 0,
+            "OzNumber": null,
+            "Value": 4.00000,
+            "Description": ""
+        }
+    ]
+}

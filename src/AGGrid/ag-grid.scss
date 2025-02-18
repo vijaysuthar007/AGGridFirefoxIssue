@@ -1,0 +1,523 @@
+$primary-color: #64be3c;
+$secondary-color: #5d6f76;
+$tertiary-color: #f2c188;
+$brz-blue: #345b88;
+$brz-orange: #e2b327;
+$brz-purple: #72087a;
+$brz-red: #ac2426;
+$brz-black: #000000;
+$light-pink: #f3d2d3;
+$colorWhite: #fff;
+
+:root {
+   --ag-icon-font-family: var(--ag-icon-font-family) !important;
+   --ag-header-column-resize-handle-height: 60% !important;
+   --ag-grid-size: 10px;
+   --ag-list-item-height: 40px;
+}
+.ag-tooltip {
+   z-index: 9999;
+}
+.ag-unselectable {
+   user-select: none !important;
+}
+.ag-header-cell-resize::after {
+   height: 40% !important;
+   top: 30%;
+   bottom: 30%;
+}
+.ag-tooltip-whitespace {
+   white-space: pre;
+}
+.ag-grid {
+   height: 100%;
+   width: 100%;
+   top: 50px;
+   box-sizing: "border-box";
+   border: #e5e5e5 solid 1px !important;
+
+   .MuiCheckbox-root {
+      padding: 0px !important;
+   }
+
+   .ag-root-wrapper-body {
+      border-top: solid 1px lightgrey;
+   }
+
+   .ag-status-bar {
+      min-height: 24px;
+
+      .ag-status-name-value {
+         padding-top: 6px;
+         padding-bottom: 6px;
+      }
+
+      .ag-status-panel {
+         align-items: center;
+      }
+
+      .MuiButton-root {
+         /* padding: 11px 16px 7px !important; */
+         font-size: 13px !important;
+         line-height: 0 !important;
+         min-height: 24px;
+      }
+   }
+
+   .ag-theme-alpine.compact {
+      --ag-grid-size: 5px;
+      --ag-list-item-height: 28px;
+   }
+
+   .ag-theme-alpine.compact .ag-cell {
+      border-right: 1px solid #bfbfbf;
+      /* Adjust border for cells */
+   }
+
+   .ag-theme-alpine.compact .ag-header-cell {
+      // height: 27px !important;
+   }
+
+   .ag-theme-alpine.compact .ag-header-row {
+      // height: 27px !important;
+   }
+
+   .ag-theme-alpine.compact .ag-header {
+      // height: 27px !important;
+      // min-height: 27px !important;
+   }
+
+   .ag-theme-alpine.compact .ag-header-cell,
+   .ag-header-group-cell {
+      border-right: 1px solid #bfbfbf;
+      font-size: 14px;
+      /* Adjust border for headers */
+   }
+
+   .ag-theme-alpine {
+      --ag-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+      --ag-alpine-active-color: #64be3c;
+      --ag-selected-row-background-color: #f2faef;
+      --ag-input-focus-border-color: transparent;
+      // --ag-list-item-height: 10px;
+      --ag-control-panel-background-color: #ffff;
+      --ag-row-hover-color: rgba(0, 0, 0, 0.04) !important;
+      --ag-header-background-color: #ffff;
+      width: 100%;
+      .ag-menu,
+      .ag-panel {
+         border-radius: 4px;
+         box-shadow:
+            0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+            0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+            0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+      .ag-header-cell {
+         font-weight: 700;
+         font-size: 13px;
+      }
+      .ag-cell-inline-editing {
+         padding-left: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+         padding-right: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+      }
+
+      .ag-row:hover {
+         background-color: #f2faef !important;
+         .ag-column-first:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            background: #64be3c;
+            height: 100%;
+         }
+      }
+      .ag-root-wrapper {
+         border-radius: 0px;
+      }
+
+      .ag-row-focus,
+      .ag-row-selected {
+         background-color: #f2faef !important;
+
+         .ag-column-first:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            background: #64be3c;
+            height: 100%;
+         }
+      }
+
+      .ag-ltr .ag-cell,
+      .ag-header-cell {
+         border-right: 1.5px solid #d9dddf;
+         border-radius: 0px !important;
+         line-height: 25px;
+
+         .ag-header-select-all {
+            margin-left: 25px;
+         }
+      }
+
+      .ag-header-cell-text {
+         font-size: 14px;
+         font-weight: 700;
+         color: #333333;
+      }
+
+      .ag-cell-focus {
+         border: #64be3c solid 1.5px !important;
+      }
+
+      .ag-cell-inline-editing {
+         background-color: #fff;
+      }
+
+      .ag-cell {
+         z-index: 2;
+         // line-height: normal !important
+      }
+
+      .ag-row-drop-hover {
+         border: #64be3c solid 1.5px !important;
+      }
+
+      .ag-cell-inline-editing .ag-cell-focus {
+         border: transparent solid 1.5px !important;
+      }
+
+      // .ag-header-cell {
+      //    ::after {
+      //       content: "";
+      //       display: block;
+      //       height: 1px;
+      //       position: absolute;
+      //       background-color: #e5e5e5;
+      //       left: 0;
+      //       bottom: 0;
+      //       width: 100%;
+      //    }
+
+      //    ::before {
+      //       content: "";
+      //       display: block;
+      //       height: 1px px;
+      //       position: absolute;
+      //       background-color: #e5e5e5;
+      //       left: 0;
+      //       top: -1px;
+      //       width: 100%;
+      //    }
+      // }
+      .ag-cell-wrapper:has(div.ag-selection-checkbox) {
+         height: 100%;
+      }
+
+      .ag-cell-wrapper {
+         .ag-drag-handle {
+            z-index: 2 !important;
+            position: relative;
+            top: 0;
+            left: 0;
+
+            .ag-icon {
+               vertical-align: baseline;
+            }
+         }
+
+         .ag-selection-checkbox {
+            z-index: 2 !important;
+            position: relative;
+            margin-left: 25px;
+         }
+
+         .MuiFormControl-root {
+            height: auto !important;
+
+            textarea {
+               // height: 140px !important;
+            }
+         }
+      }
+
+      .ag-cell-inline-editing {
+         padding-left: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+         padding-right: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+      }
+
+      .ag-cell {
+         padding-left: 0 !important;
+         padding-right: 0 !important;
+
+         &.ContractStatus-1 {
+            color: $brz-black !important;
+         }
+
+         &.ContractStatus-2 {
+            background-color: $primary-color !important;
+            color: $colorWhite;
+         }
+
+         &.ContractStatus-3 {
+            background-color: $brz-red !important;
+            color: $colorWhite;
+         }
+
+         &.ContractStatus-4 {
+            background-color: $brz-blue !important;
+            color: $colorWhite;
+         }
+
+         .ag-row-drag {
+            margin-right: 0;
+         }
+         .lv-ep {
+            display: flex;
+            width: 100%;
+            align-items: baseline;
+            i {
+               margin: 0 2px;
+               cursor: pointer;
+            }
+            .brz-close {
+               margin-right: 3px;
+               position: relative;
+               top: 1px;
+            }
+            span {
+               flex-grow: 1;
+            }
+         }
+      }
+
+      .ag-checkbox-selection {
+         padding-left: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+         padding-right: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+      }
+
+      .ag-selection-checkbox {
+         margin-left: 10px;
+      }
+
+      .ag-body.ag-layout-normal {
+         overflow-x: auto !important;
+         overflow-y: auto !important;
+      }
+
+      .edit-wrapper {
+         width: -webkit-fill-available;
+         padding-left: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+         padding-right: calc(var(--ag-cell-horizontal-padding) - 1px) !important;
+         height: 100%;
+         display: flex;
+         align-items: center;
+
+         .MuiInputBase-inputMultiline {
+            // padding-top: 10px
+         }
+      }
+
+      .wrapper {
+         display: block;
+         .bg-gray {
+            background-color: #cfcfcf !important;
+         }
+
+         .bg-green {
+            background-color: #64be3c !important;
+         }
+
+         .ag-drop-zone {
+            padding-bottom: 0px;
+            height: 3px;
+            position: relative;
+            width: 100%;
+         }
+
+         .bg-transparent {
+            background-color: transparent !important;
+         }
+
+         .bg-active {
+            background-color: #64be3c !important;
+         }
+
+         .row-right-align {
+            text-align: right;
+            justify-content: end;
+         }
+
+         .absolate-position-row {
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 1px;
+         }
+
+         .absolate-top-position-row {
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+
+         .drop-ag-row-height {
+            width: 100%;
+            height: 100%;
+         }
+
+         .MuiCheckbox-root,
+         .notes-button {
+            padding: 0px !important;
+            align-items: baseline !important;
+         }
+
+         .drop-ag-row {
+            padding-left: calc(var(--ag-cell-horizontal-padding) - 1px);
+            padding-right: calc(var(--ag-cell-horizontal-padding) - 1px);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            white-space: pre;
+            width: auto;
+            height: 100%;
+            text-overflow: ellipsis;
+            top: 3px;
+            line-height: 1.2rem;
+            .MuiCheckbox-root,
+            .notes-button {
+               padding: 0px !important;
+               align-items: baseline !important;
+            }
+
+            .multiline-text {
+               margin-top: 10px;
+               // margin-bottom: 10px;
+            }
+
+            // .item-type {
+            //    margin-top: 0;
+            // }
+
+            .cell-input-wrapper {
+               // display: inline-flex;
+            }
+
+            .content-align {
+               display: flex;
+               justify-content: space-between;
+               width: 100%;
+
+               span {
+                  width: calc(100% - 10px);
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+               }
+
+               button {
+                  padding: 5px;
+                  margin-left: 0;
+               }
+            }
+         }
+      }
+   }
+}
+
+.compactGrid {
+   .drop-ag-row {
+      padding-left: calc(var(--ag-cell-horizontal-padding) - 1px);
+      padding-right: calc(var(--ag-cell-horizontal-padding) - 1px);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      white-space: pre;
+      width: -webkit-fill-available;
+      height: 100%;
+      text-overflow: ellipsis;
+      cursor: pointer;
+      width: auto;
+   }
+
+   .MuiCheckbox-root {
+      padding: 0px !important;
+
+      .MuiSvgIcon-root {
+         height: 20px;
+         width: 20px;
+      }
+   }
+
+   .content-align {
+      align-items: baseline !important;
+
+      button {
+         align-self: flex-start;
+         padding: 0;
+      }
+
+      &.brz-search {
+         font-size: 12px;
+      }
+   }
+
+   .item-type {
+      display: flex !important;
+      margin-bottom: 4px;
+      margin-top: 0;
+      min-width: 17px !important;
+   }
+
+   .brz-calculator {
+      font-size: 16px;
+   }
+
+   .notes-button {
+      padding: 0;
+      font-size: 14px !important;
+      height: 18px !important;
+   }
+
+   .ag-drop-zone {
+      height: 2px !important;
+   }
+}
+.disabledRow .wrapper .drop-ag-row {
+   text-decoration: line-through;
+}
+
+.custom-loading-overlay {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 3rem;
+   left: 1rem;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.ag-drop-zone-section {
+   width: 100%;
+   height: 100%;
+}
+.align-start {
+   align-items: start;
+}
+.align-center {
+   align-items: center;
+}
+.draggable-content {
+   width: calc(100% - 28px);
+}
+.trash-ag-grid {
+   font-size: 16px !important;
+}

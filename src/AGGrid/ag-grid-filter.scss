@@ -1,0 +1,158 @@
+.ag-grid-number-filter {
+   padding: 5px;
+   display: flex;
+   gap: 2px;
+   flex-direction: column;
+
+   .button-group {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      button: {
+         width: 100%;
+      }
+   }
+
+   .css-14ao3vv-MuiInputBase-root-MuiInput-root-MuiSelect-root:after,
+   .css-14ao3vv-MuiInputBase-root-MuiInput-root-MuiSelect-root:before {
+      border-bottom: 0px !important;
+   }
+}
+
+.ag-select-list {
+   background-color: #fff;
+   overflow-y: auto;
+   overflow-x: hidden;
+   border-radius: 3px;
+   border: solid 1px #babfc7;
+}
+
+.ag-list-item {
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.list-text {
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.ag-filter-button-group {
+   display: flex;
+   justify-content: flex-end;
+   overflow: hidden;
+   padding: 12px 12px;
+   border-top: solid 1px #dde2eb;
+}
+
+.ag-std-btn {
+   font-family: inherit;
+   appearance: none;
+   -webkit-appearance: none;
+   border-radius: 3px;
+   border: 1px solid;
+   border-color: #64be3c;
+   color: #64be3c;
+   background-color: #fff;
+   font-weight: 600;
+   padding: 6px 12px;
+}
+
+.ag-std-btn:hover {
+   border-color: #64be3c;
+   background-color: rgba(33, 150, 243, 0.1)
+}
+
+.ag-grid-apply-btn {
+   line-height: 1.5;
+   margin-left: 12px;
+}
+
+.ag-grid-simple-body-wrapper {
+   padding: 5px 12px;
+   padding-bottom: 12px 9px;
+   overflow-y: auto;
+   min-height: 45px;
+   min-width: 180px;
+}
+
+.ag-grid-filter-body-wrapper {
+   display: flex;
+   flex-direction: column;
+
+   .MuiInputBase-root {
+      font-size: 13px !important;
+   }
+}
+
+.ag-select-field {
+   display: flex;
+   align-items: center;
+   box-sizing: border-box !important;
+   outline: none;
+   margin-bottom: 5px;
+   border: solid 1px;
+   border-color: #babfc7;
+   border-radius: 5px;
+   background-color: #fff;
+   padding: 0px 2px 0px 2px;
+
+   .MuiInputBase-root.MuiInput-underline:before {
+      border-bottom: 0px !important
+   }
+
+   .css-14ao3vv-MuiInputBase-root-MuiInput-root-MuiSelect-root:before {
+      border-bottom: 0px !important
+   }
+
+   .css-14ao3vv-MuiInputBase-root-MuiInput-root-MuiSelect-root:after {
+      border-bottom: 0px !important;
+   }
+
+   .css-14ao3vv-MuiInputBase-root-MuiInput-root-MuiSelect-root:hover:not(.Mui-disabled, .Mui-error):before {
+      border-bottom: 0px !important;
+   }
+
+   .MuiSelect-standard {
+      padding-top: 2px !important
+   }
+
+   .css-xt103o-MuiButtonBase-root-MuiMenuItem-root {
+      line-height: 1.0;
+      font-size: 0.9rem;
+   }
+}
+
+.ag-textinput-field {
+   align-items: center;
+   box-sizing: border-box !important;
+   outline: none;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border: solid 1px;
+   border-color: #babfc7;
+   border-radius: 5px;
+   background-color: #fff;
+   padding: 3px;
+
+   .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+      padding: 0px !important
+   }
+
+   .MuiInput-underline:before {
+      border-bottom: 0px !important
+   }
+
+   .css-2vnagt-MuiInputBase-root-MuiInput-root:after {
+      border-bottom: 0px !important;
+   }
+}
+
+.custom-datepicker button svg {
+   padding-top: 8px !important
+}

@@ -1,0 +1,19 @@
+
+
+.address-table-wrapper {
+  height: 100%;
+}
+.main-wrapper {
+  height: calc(100vh - 76px);
+  padding: 12px 30px;
+  overflow-y: auto;
+  .paper{
+    height: calc(100vh - 250px) !important;
+  }
+  .variable-grid {
+    height: calc(100vh - 300px) !important;
+  }
+}
+.p-3 {
+  padding: 16px !important;
+}

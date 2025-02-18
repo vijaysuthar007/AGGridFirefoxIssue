@@ -1,0 +1,1 @@
+When opening this code sandbox in Firefox and clicking "Open in New Window," the screen goes blank. However, it works fine in Chrome.
